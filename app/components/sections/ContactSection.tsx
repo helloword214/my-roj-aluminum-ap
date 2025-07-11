@@ -56,14 +56,16 @@ export default function Contact() {
           <div className="w-full h-64 rounded-lg overflow-hidden shadow">
             <iframe
               title="ROJ Aluminum Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3855.2324031674045!2d120.6118755!3d15.9779536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33913f4ebf70dc03%3A0xf21172d0ecda3b72!2sPangasinan%20Ville%20(%20AFP%20-%20PNP%20HOUSING%2C%20Urdaneta%20City%20Pangasinan)!5e0!3m2!1sen!2sph!4v1720558393882!5m2!1sen!2sph"
+              src="https://maps.google.com/maps?q=15.9779536,120.6118755&z=16&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
             />
+            <noscript>
+              <p className="text-sm text-red-500 mt-2">Please enable JavaScript to view the map.</p>
+            </noscript>
           </div>
         </div>
       </div>
