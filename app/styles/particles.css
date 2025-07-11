@@ -1,0 +1,21 @@
+.particle {
+  position: absolute;
+  bottom: -10%;
+  background: radial-gradient(hsl(180, 100%, 80%), transparent 90%);
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  animation-name: float-up;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float-up {
+  from {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 1;
+  }
+}

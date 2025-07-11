@@ -1,0 +1,5 @@
+# Ignore these paths when running Prettier
+node_modules
+build
+public/build
+.vercel
