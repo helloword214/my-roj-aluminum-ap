@@ -36,6 +36,8 @@ export default function ImageCarousel({ images }: Props) {
               <img
                 src={img}
                 alt={`Project ${idx + 1}`}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-64 object-cover rounded-xl shadow-md"
               />
             </div>
@@ -48,7 +50,10 @@ export default function ImageCarousel({ images }: Props) {
         {images.map((_, idx) => (
           <button
             key={idx}
+            type="button"
             onClick={() => scrollTo(idx)}
+            aria-label={`Go to slide ${idx + 1}`}
+            aria-current={selectedIndex === idx ? 'true' : undefined}
             className={clsx(
               'w-3 h-3 rounded-full transition-all',
               selectedIndex === idx

@@ -4,6 +4,7 @@ import Hero from '~/components/Hero';
 import ProductOverview from '~/components/sections/ProductOverview';
 import WhyChooseUs from '~/components/sections/WhyChooseUs';
 import ProjectGallery from '~/components/sections/ProjectGallery';
+import VideoGallery from '~/components/sections/VideoGallery';
 import Testimonials from '~/components/sections/Testimonials';
 import ContactSection from '~/components/sections/ContactSection';
 import Footer from '~/components/sections/Footer';
@@ -26,6 +27,7 @@ export default function Index() {
       <ProductOverview />
       <WhyChooseUs />
       <ProjectGallery />
+      <VideoGallery />
       <Testimonials />
       <ContactSection />
       <Footer />
